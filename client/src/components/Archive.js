@@ -12,7 +12,6 @@ class Archive extends Component {
   }
 
   componentDidMount(){
-    // fetch('/likes')
     fetch('/archives')
     .then(response => response.json())
     .then(likes => this.setState({wishlist: likes}))
